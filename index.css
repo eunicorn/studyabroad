@@ -1,8 +1,8 @@
 /** this applies from 0px to 600px */
 body {
     padding-top: 62px;
-    text-overflow: scroll;
-    margin-bottom: 65px;
+    overflow: scroll;
+    padding-bottom: 80px;
 }
 
 h3 {
@@ -16,7 +16,6 @@ h3 {
 .center {
     text-align: center;
 }
-
 /** desktop nav **/
 .desktop-nav {
     display: none;
@@ -29,8 +28,13 @@ h3 {
 
 .navbar .nav li {
     display: table-cell;
-    width: 16%;
+    width: 25%;
     float: none;
+}
+
+.navbar-nav>li>a.active {
+    text-decoration: underline;
+    color: darkred;
 }
 
 .navbar.navbar-fixed-top {
@@ -68,7 +72,26 @@ h3 {
     font-size: 2em;
 }
 
+.btn2 {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin: 10px 0;
+    opacity: 0.8;
+    font-size: 1em;
+    width: 250px;
 
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 250%;
+    height: 100px;
+    column-gap: 4px;
+}
+.contact-us{
+    padding: 20px 0;
+}
 
 
 
@@ -83,10 +106,22 @@ h3 {
         padding: 5px 50px;
     }
     .desktop-nav {
-        display: none;
+        display: inline-block;
+        width: 100%;
     }
     .mobile-nav {
-        display: inline-block;
+        display: none;
+    }
+    .navbar .nav li {
+        width: 16.6%;
+    }
+    .btn2{
+        width: 100%;
+        margin: 0;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: white;
     }
 
 }
