@@ -1,0 +1,92 @@
+/** this applies from 0px to 600px */
+body {
+    padding-top: 62px;
+    text-overflow: scroll;
+    margin-bottom: 65px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    padding: 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+/** desktop nav **/
+.desktop-nav {
+    display: none;
+}
+
+.navbar .nav {
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 16%;
+    float: none;
+}
+
+.navbar.navbar-fixed-top {
+    padding: 4px 10px;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+.navbar.navbar-fixed-bottom {
+    border-top: 2px solid black;
+}
+
+.nav.navbar-nav li{
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.cover {
+    width: 100%;
+    height: 300px;
+    background-image: url("travel.jpg");
+    text-align: center;
+}
+
+.btn-started {
+    margin-top: 30%;
+}
+
+.btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 30px;
+    opacity: 0.8;
+    font-size: 2em;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .navbar.navbar-fixed-top {
+        padding: 4px 20px;
+        border-bottom: 2px solid black;
+        background-color: white;
+    }
+    .btn-started {
+        margin-top: 10%;
+        padding: 5px 50px;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: inline-block;
+    }
+
+}
